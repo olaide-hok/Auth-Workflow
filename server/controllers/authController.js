@@ -140,9 +140,19 @@ const logout = async (req, res) => {
     res.status(StatusCodes.OK).json({msg: 'user logged out!'});
 };
 
+const forgotPassword = async (req, res) => {
+    res.status(StatusCodes.OK).json({msg: 'forgot password!'});
+};
+
+const resetPassword = async (req, res) => {
+    res.status(StatusCodes.OK).json({msg: 'reset password!'});
+};
+
 module.exports = {
     register,
     login,
     logout,
     verifyEmail,
+    forgotPassword,
+    resetPassword,
 };
